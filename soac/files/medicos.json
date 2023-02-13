@@ -1,0 +1,267 @@
+[
+    {
+        "id": 1,
+        "name": "Dr. John Doe",
+        "specialty": "Pediatra"
+    },
+    {
+        "id": 2,
+        "name": "Dr. Jane Smith",
+        "specialty": "Cirurgiao"
+    },
+    {
+        "id": 3,
+        "name": "Dr. Bob Johnson",
+        "specialty": "Medico de Familia"
+    },
+    {
+        "id": 4,
+        "name": "Dr. Mary Jones",
+        "specialty": "Pediatra"
+    },
+    {
+        "id": 5,
+        "name": "Dr. James Brown",
+        "specialty": "Cirurgiao"
+    },
+    {
+        "id": 6,
+        "name": "Dr. Susan Williams",
+        "specialty": "Medico de Familia"
+    },
+    {
+        "id": 7,
+        "name": "Dr. Robert Miller",
+        "specialty": "Pediatra"
+    },
+    {
+        "id": 8,
+        "name": "Dr. Lisa Taylor",
+        "specialty": "Cirurgiao"
+    },
+    {
+        "id": 9,
+        "name": "Dr. David Wilson",
+        "specialty": "Medico de Familia"
+    },
+    {
+        "id": 10,
+        "name": "Dr. Karen Davis",
+        "specialty": "Pediatra"
+    },
+    {
+        "id": 11,
+        "name": "Dr. Richard Garcia",
+        "specialty": "Cirurgiao"
+    },
+    {
+        "id": 12,
+        "name": "Dr. Linda Rodriguez",
+        "specialty": "Medico de Familia"
+    },
+    {
+        "id": 13,
+        "name": "Dr. Michael Clark",
+        "specialty": "Pediatra"
+    },
+    {
+        "id": 14,
+        "name": "Dr. Patricia Martinez",
+        "specialty": "Cirurgiao"
+    },
+    {
+        "id": 15,
+        "name": "Dr. Daniel Anderson",
+        "specialty": "Medico de Familia"
+    },
+    {
+        "id": 16,
+        "name": "Dr. Karen Jackson",
+        "specialty": "Pediatra"
+    },
+    {
+        "id": 17,
+        "name": "Dr. Mark Thomas",
+        "specialty": "Cirurgiao"
+    },
+    {
+        "id": 18,
+        "name": "Dr. Barbara Hernandez",
+        "specialty": "Medico de Familia"
+    },
+    {
+        "id": 19,
+        "name": "Dr. Donald Thompson",
+        "specialty": "Pediatra"
+    },
+    {
+        "id": 20,
+        "name": "Dr. Lisa White",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 21,
+        "name": "Dr. Paul Lopez",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 22,
+        "name": "Dr. Linda Lee",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 23,
+        "name": "Dr. John Moore",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 24,
+        "name": "Dr. Donald Taylor",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 25,
+        "name": "Dr. Lisa Martin",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 26,
+        "name": "Dr. James Hernandez",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 27,
+        "name": "Dr. Mark Garcia",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 28,
+        "name": "Dr. Mary Robinson",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 29,
+        "name": "Dr. Linda Clark",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 30,
+        "name": "Dr. James Rodriguez",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 31,
+        "name": "Dr. John Lewis",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 32,
+        "name": "Dr. Robert Walker",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 33,
+        "name": "Dr. Linda Hall",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 34,
+        "name": "Dr. James Allen",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 35,
+        "name": "Dr. Robert Young",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 36,
+        "name": "Dr. John Hernandez",
+        "specialty": "Ortopedista"
+    },
+    {
+        "id": 37,
+        "name": "Dr. Antonio Silva",
+        "specialty": "Neurologista"
+    },
+    {
+        "id": 38,
+        "name": "Dr. Fernao Dias",
+        "specialty": "Urologista"
+    },
+    {
+        "id": 39,
+        "name": "Dr. Joao Pedro",
+        "specialty": "Neurologista"
+    },
+    {
+        "id": 40,
+        "name": "Dr. Maria Joaquina",
+        "specialty": "Urologista"
+    },
+    {
+        "id": 41,
+        "name": "Dr. Maria da Penha",
+        "specialty": "Neurologista"
+    },
+    {
+        "id": 42,
+        "name": "Dr. Maria da Gloria",
+        "specialty": "Urologista"
+    },
+    {
+        "id": 43,
+        "name": "Dr. Maria da Conceicao",
+        "specialty": "Neurologista"
+    },
+    {
+        "id": 44,
+        "name": "Dr. Maria da Paz",
+        "specialty": "Urologista"
+    },
+    {
+        "id": 45,
+        "name": "Dr. Maria da Luz",
+        "specialty": "Neurologista"
+    },
+    {
+        "id": 46,
+        "name": "Dr. Maria da Esperanca",
+        "specialty": "Urologista"
+    },
+    {
+        "id": 47,
+        "name": "Dr. Maria da Gloria",
+        "specialty": "Neurologista"
+    },
+    {
+        "id": 48,
+        "name": "Dr. Maria da Paz",
+        "specialty": "Urologista"
+    },
+    {
+        "id": 49,
+        "name": "Dr. Maria da Luz",
+        "specialty": "Neurologista"
+    },
+    {
+        "id": 50,
+        "name": "Dr. Maria da Esperanca",
+        "specialty": "Urologista"
+    },
+    {
+        "id": 51,
+        "name": "Dr. Maria da Gloria",
+        "specialty": "Neurologista"
+    },
+    {
+        "id": 52,
+        "name": "Dr. Maria da Paz",
+        "specialty": "Urologista"
+    },
+    {
+        "id": 53,
+        "name": "Dr. Maria da Luz",
+        "specialty": "Neurologista"
+    }
+]
