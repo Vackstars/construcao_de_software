@@ -1,51 +1,58 @@
-import React from 'react';
-import { View, Text, StyleSheet, TouchableOpacity } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, StyleSheet, TouchableOpacity, ScrollView } from 'react-native';
 
-const SearchDoctorsScreen = ({ navigation }) => {
+const ResultSearchDoctorsScreen = ({ navigation, route }) => {
+
+    const [doctors, setDoctors] = useState('');
+
+    const [specialty, setSpecialty] = useState('');
+
+
+    const doctorsData = require('../files/medicos.json');
+
     return (
-        <View style={styles.container}>
-            <Text style={styles.header}>Pesquisar Médico</Text>
-            <View style={styles.line} />
-            <Text style={styles.doctorsHeader}>Médicos</Text>
-            <View style={styles.doctorContainer}>
-                <View style={styles.doctorInfo}>
-                    <Text style={styles.doctorName}>Dr. João da Silva</Text>
-                    <Text style={styles.specialties}>Cardiologista e Cirurgião</Text>
+        <ScrollView>
+            <View style={styles.container}>
+                <Text style={styles.header}>Pesquisar Médico</Text>
+                <View style={styles.line} />
+                <Text style={styles.doctorsHeader}>Médicos</Text>
+                {/* <Text>{JSON.stringify(route.params.specialty_)}</Text> */}
+
+                {/* {doctorsData.map(doctor => (
+                
+                < View style = { styles.doctorContainer } >
+                    <View style={styles.doctorInfo} key={doctor.id}>
+                        <Text style={styles.doctorName}>{doctor.name}</Text>
+                        <Text style={styles.specialties}>{doctor.specialty}</Text>
+                    </View>
+                    <TouchableOpacity style={styles.selectButton}>
+                        <Text style={styles.selectButtonText}>Selecionar</Text>
+                    </TouchableOpacity>
                 </View>
-                <TouchableOpacity
-                    onPress={() => navigation.navigate('SolicitacaoConsultaData')}
-                    style={styles.selectButton}>
-                    <Text style={styles.selectButtonText}>Selecionar</Text>
-                </TouchableOpacity>
-            </View>
-            <View style={styles.doctorContainer}>
-                <View style={styles.doctorInfo}>
-                    <Text style={styles.doctorName}>Dra. Maria Oliveira</Text>
-                    <Text style={styles.specialties}>Pediatra e Ginecologista</Text>
-                </View>
-                <TouchableOpacity style={styles.selectButton}>
-                    <Text style={styles.selectButtonText}>Selecionar</Text>
-                </TouchableOpacity>
-            </View>
-            <View style={styles.doctorContainer}>
-                <View style={styles.doctorInfo}>
-                    <Text style={styles.doctorName}>Dr. Rafael dos Santos</Text>
-                    <Text style={styles.specialties}>Ortopedista e Traumatologista</Text>
-                </View>
-                <TouchableOpacity style={styles.selectButton}>
-                    <Text style={styles.selectButtonText}>Selecionar</Text>
-                </TouchableOpacity>
-            </View>
-            <View style={styles.doctorContainer}>
-                <View style={styles.doctorInfo}>
-                    <Text style={styles.doctorName}>Dr. Luiz Fernando</Text>
-                    <Text style={styles.specialties}>Clínico Geral e Neurologista</Text>
-                </View>
-                <TouchableOpacity style={styles.selectButton}>
-                    <Text style={styles.selectButtonText}>Selecionar</Text>
-                </TouchableOpacity>
-            </View>
-        </View>
+            
+            ))} */}
+
+                {/* Render only the doctors that have specialty == specialty_ */}
+                {doctorsData.map(doctor => {
+                    if (doctor.specialty == route.params.specialty_) {
+                        return (
+                            < View style={styles.doctorContainer} >
+                                <View style={styles.doctorInfo} key={doctor.id}>
+                                    <Text style={styles.doctorName}>{doctor.name}</Text>
+                                    <Text style={styles.specialties}>{doctor.specialty}</Text>
+                                </View>
+                                <TouchableOpacity style={styles.selectButton}>
+                                    <Text
+                                        onPress={() => { navigation.navigate('SolicitacaoConsultaData') }}
+                                        style={styles.selectButtonText}>Selecionar</Text>
+                                </TouchableOpacity>
+                            </View>
+                        )
+                    }
+                })}
+
+            </View >
+        </ScrollView>
     );
 };
 
@@ -111,4 +118,4 @@ const styles = StyleSheet.create({
     },
 });
 
-export default SearchDoctorsScreen;
+export default ResultSearchDoctorsScreen;

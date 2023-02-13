@@ -120,6 +120,37 @@ const Profile = ({ navigation }) => (
                         <Text style={styles.agendaDescription}>Exame de sangue</Text>
                     </TouchableOpacity>
                 </View>
+                <View style={styles.agendaRow}>
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('InformacoesConsulta')}
+                        style={styles.agendaRow}
+                    >
+                        <Text style={styles.agendaMonth}>Dezembro</Text>
+                        <Text style={styles.agendaDay}>27</Text>
+                        <Text style={styles.agendaDescription}>Consulta com o Dr. João</Text>
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.agendaRow}>
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('InformacoesConsulta')}
+                        style={styles.agendaRow}
+                    >
+                        <Text style={styles.agendaMonth}>Dezembro</Text>
+                        <Text style={styles.agendaDay}>28</Text>
+                        <Text style={styles.agendaDescription}>Retorno com a Dra. Maria</Text>
+                    </TouchableOpacity>
+                </View>
+                <View style={styles.agendaRow}>
+                    <TouchableOpacity
+                        onPress={() => navigation.navigate('InformacoesConsulta')}
+                        style={styles.agendaRow}
+                    >
+                        <Text style={styles.agendaMonth}>Dezembro</Text>
+                        <Text style={styles.agendaDay}>28</Text>
+                        <Text style={styles.agendaDescription}>Retorno com a Dra. Maria</Text>
+                    </TouchableOpacity>
+                </View>
+
             </View>
         </View>
         <View style={styles.optionsButtonContainer}>

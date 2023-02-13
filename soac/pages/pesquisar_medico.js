@@ -1,8 +1,12 @@
 import React, { useState } from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
 
-const SearchDoctorScreen = ({ navigation }) => {
-    const [specialty, setSpecialty] = useState('');
+const SearchDoctorScreen = ({ navigation, route }) => {
+    const [specialty_, setSpecialty] = useState('');
+
+    const handlePesquisar = () => {
+        navigation.navigate('ResultadoPesquisaMedico', { specialty_: route.params.specialty });
+    };
 
     return (
         <View style={styles.container}>
@@ -18,9 +22,9 @@ const SearchDoctorScreen = ({ navigation }) => {
                         onPress={() => navigation.navigate('PesquisarMedicoEsp')}>
 
 
-                        <Text>Especialidade 1</Text>
-                        <Text>Especialidade 2</Text>
-                        <Text>Especialidade 3</Text>
+                        <Text>{JSON.stringify(route.params.specialty)}</Text>
+                        <Text>Clique aqui e selecione</Text>
+                        <Text>a especialidade</Text>
                     </TouchableOpacity>
                 </View>
             </View>
@@ -41,7 +45,7 @@ const SearchDoctorScreen = ({ navigation }) => {
                 </TouchableOpacity>
             </View>
             <TouchableOpacity
-                onPress={() => navigation.navigate('ResultadoPesquisaMedico')}
+                onPress={handlePesquisar}
                 style={styles.searchButton}>
                 <Text style={styles.searchButtonText}>Pesquisar</Text>
             </TouchableOpacity>
