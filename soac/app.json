@@ -28,12 +28,6 @@
     },
     "web": {
       "favicon": "./assets/favicon.png"
-    },
-    "extra": {
-      "eas": {
-        "projectId": "55792118-1301-483c-ac6d-b7535a2dceb3"
-      }
-    },
-    "owner": "lucascheco"
+    }
   }
 }
