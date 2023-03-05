@@ -1,12 +1,12 @@
 import React from 'react';
 import { View, StyleSheet, TouchableOpacity, Text } from 'react-native';
 
-const SearchDoctorScreen = ({ navigation }) => {
+const SearchDoctorScreen = ({ navigation, route }) => {
     return (
         <View style={styles.container}>
             <TouchableOpacity
                 style={styles.searchButton}
-                onPress={() => navigation.navigate('PesquisarMedico')}
+                onPress={() => navigation.navigate('PesquisarMedico', { specialty: 'Cardiologista' })}
             >
                 <Text style={styles.searchButtonText}>Pesquisar Médicos</Text>
             </TouchableOpacity>

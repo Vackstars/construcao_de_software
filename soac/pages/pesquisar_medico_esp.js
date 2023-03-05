@@ -1,11 +1,17 @@
 import React from 'react';
-import { View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
+import { AsyncStorage, View, Text, TextInput, TouchableOpacity, StyleSheet } from 'react-native';
 
 const SelectSpecialtyScreen = ({ navigation }) => {
     const [specialty, setSpecialty] = React.useState('');
 
-    const handleConfirm = () => {
-        // Aqui você pode adicionar o código para enviar a especialidade selecionada para a próxima tela
+    const handleTextChange = (text) => {
+        setSpecialty(text);
+    };
+
+    const handleConfirm = async () => {
+        navigation.navigate('PesquisarMedico', { specialty });
+        {/* write speciality in a consultas.json file  */ }
+
     };
 
     return (
@@ -14,7 +20,7 @@ const SelectSpecialtyScreen = ({ navigation }) => {
             <TextInput
                 style={styles.textInput}
                 placeholder="Digite a especialidade desejada"
-                onChangeText={setSpecialty}
+                onChangeText={handleTextChange}
                 value={specialty}
             />
             <View style={styles.buttonsContainer}>
